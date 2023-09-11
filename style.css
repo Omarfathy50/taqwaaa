@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  background: #000;
-  direction: rtl;
+  background: #fff;
+  
 }
 header {
   position: fixed;
@@ -15,6 +15,7 @@ header {
   background-color: #fff;
   padding: 3rem 5rem;
   z-index: 1000;
+  direction: rtl;
 }
 nav {
   display: flex;
@@ -95,6 +96,9 @@ nav ul.active {
   }
   nav ul a{
     color: #fff;
+  }
+  .slider__slide-parts img{
+    width: 10%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -517,4 +521,46 @@ nav ul.active {
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+.whyus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  direction: rtl;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.whyus-col{
+  flex-basis: 31%;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.whyus-col h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: oklch(0.37 0.1 276.09);
+}
+.whyus-col:hover{
+  box-shadow: 0 0 20px 0px rgba(105, 58, 194, 0.2);
+}
+
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+  .whyus-col h3{
+    font-size: 26px;
+  }
+  .whyus-col p{
+    font-size: 16px;
+  }
 }
