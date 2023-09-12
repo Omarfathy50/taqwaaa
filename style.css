@@ -648,27 +648,17 @@ nav ul.active {
   font-size: 1.3rem;
   margin: 0 2rem;
   text-align: justify;
-  animation-duration: 3s;
-  animation-name: slidein;
+}
+.about-info .aboutP{
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.about-info .aboutP.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 button {
   border: none;
   outline: 0;
@@ -768,4 +758,13 @@ button:hover {
   .container h1{
     font-size: 26px;
   }
+}
+.howItWorks{
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.howItWorks.active{
+  transform: translateY(0);
+  opacity: 1;
 }
