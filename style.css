@@ -29,7 +29,7 @@ nav ul {
   gap: 2rem;
 }
 .first-char{
-  color: darkred;
+  color:#ff5e14;
 }
 nav a {
   font-size: 1.8rem;
@@ -960,4 +960,14 @@ color: #ff5e14;
   .copyright-text{
     text-align: center;
   }
+}
+.aboutimg img{
+  width: 100%;
+  height: 500px;
+}
+.aboutimg h3{
+  text-align: center;
+  margin-top: -200px;
+  font-size: 35px;
+  color:oklch(0.37 0.1 276.09);
 }
