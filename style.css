@@ -971,3 +971,59 @@ color: #ff5e14;
   font-size: 35px;
   color:oklch(0.37 0.1 276.09);
 }
+.social{
+  width: 150px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: -110px;
+  bottom:  34%;
+  z-index: 1000;
+}
+.social a{
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: .5rem;
+  text-align: center;
+  transition: all 1s ease;
+}
+.social a:hover{
+  transform: translateX(-110px);
+}
+.social a i {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.social a.facebook{
+  background-color: #1877f2;
+}
+.social a.WhatsApp{
+  background-color:#25d366 ;
+}
+.social a.Twitter{
+  background-color:#1da1f2 ;
+}
+.social a.Instagram{
+  background-color: #c32aa3;
+}
+.social a.call{
+  background-color: #1ed760;
+}
+@media(max-width: 700px){
+  .social{
+    right: -100px;
+    top: 30%;
+  }
+  .social a {
+    font-size: 18px;
+    padding: 19px;
+  }
+  .social a i{
+    padding-right: 10px;
+  }
+  
+}
