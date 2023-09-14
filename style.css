@@ -748,15 +748,26 @@ button:hover {
   margin: 10px 0;
   color: oklch(0.37 0.1 276.09);
 }
+.smallpa{
+  margin-left: 150px; 
+  margin-right: 150px; 
+  font-size: 25px;
+}
 @media(max-width: 700px){
   .containerr .row .card h4{
     font-size: 26px;
   }
   .containerr .row .card p{
-    font-size: 16px;
+    font-size: 19px;
   }
   .containerr h1{
     font-size: 26px;
+  }
+  .smallpa{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 .howItWorks{
