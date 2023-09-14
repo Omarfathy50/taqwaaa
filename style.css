@@ -686,6 +686,7 @@ nav ul.active {
 @media(max-width: 700px){
   .about-info{
     flex-direction: column;
+    margin-top: -100px;
   }
   .about h1{
     font-size: 26px;
